@@ -1,0 +1,100 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Title of the page will always be here.*/
+h1{
+	font-size: 175%;
+	color: red;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+/*Container for menu heading and menu content. Will be relative to the <section> tag used in each display mode.*/
+div.text{
+	box-sizing: border-box;
+	background-color: gray;
+	border: 3px solid black;
+	margin: 5px;
+}
+
+div.image{
+	box-sizing: border-box;
+	margin-top: 20px;
+	text-align: center;
+}
+
+img {
+  border: 1px solid black;
+  width: 80%;
+  height: 80%;
+}
+
+/*Heading of each menu type. Does not need to be altered according to display settings.*/
+h2{
+	font-size: 125%;
+	position: relative;
+	margin: 0px;
+	text-align: center;
+	padding: 3px;
+	border: 3px solid black;
+	width: 30%;
+	float: right;
+}
+
+#chicken h2 {
+	background-color: #d59898;
+}
+
+#beef h2 {
+	background-color: #c14543;
+}
+
+#sushi h2 {
+	background-color: #e5d198;
+}
+
+
+/*Container for items in the each menu.*/
+p{
+	clear: both;
+	padding: 10px;
+	margin: 10px;
+}
+
+/*CSS settings for regular desktop resolutions.*/
+@media (min-width: 992px) { 
+ 	.col-rgdisp {
+ 		box-sizing: border-box;
+		width: 33.33%;
+		float: left;
+		padding: 5px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {	
+ 	.col-mddisp {
+ 		box-sizing: border-box;
+		width: 50.00%;
+		float: left;
+		padding: 5px;
+	}
+	
+	#sushi {
+		width: 100%;
+		clear: both;
+		padding: 5px;
+	}
+
+}
+
+@media (max-width: 766px) {
+	.col-smdisp {
+	 	box-sizing: border-box;
+		width: 100%;
+		float: left;
+		padding: 5px;
+	}
+}
+}
