@@ -12,6 +12,66 @@ body {
 	border: 0;
 }
 
+.navbar-brand {
+	padding-top: 10px;
+	position: relative;
+}
+
+/* Special workaround for restaurant title; need to overwrite Bootstrap CSS's styling for anchors */
+a.restaurant_Name {
+    color: #557c3e;
+    text-decoration: none; /*Disables unlines.*/
+}
+
+div.restaurant_Name{
+	margin-top: 10px;
+}
+
+.navbar-brand h1{
+	font-family: 'Lora', serif;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 0.75;
+}
+
+/*CSS style to ensure that containers wrap properly on smaller devices.*/
+@media (max-width: 767.98px) {
+	.navbar-brand h1{
+		white-space: normal; /*Used to ensure that text wraps properly. Set to no-wrap in default Bootstrap 4.*/
+		line-height: 1.0;
+	}
+
+	/*Disables fluid width for small resolutions. This allows the item menu to be seen.*/
+	.container-fluid { 
+		max-width: 80%;
+	}
+}
+
+@media (max-width: 860px){
+	.navList{
+		flex-direction: column !important;
+		text-align: center;
+	}
+}
+
+@media (min-width: 861px){
+	.navList div{
+		margin: 5px;
+	}
+}
+
+
+.navbar-brand span.kosher{
+	color: #000;
+	text-transform: uppercase;
+	font-size: .7em;
+	margin-top: 15px;
+}
+
 #logo-img{
 	background: url(../images/restaurant-logo_large.png) no-repeat;
 	width: 150px;

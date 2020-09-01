@@ -5,11 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <base href="">
+    
     <!-- Bootstrap CSS -->
-	<link rel ="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/styles.css">
+	
 	<!-- Font imports-->
-	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <title>Test Website</title>
   </head>
   
@@ -17,15 +20,30 @@
   <body>
   	<!-- Website header -->
     <header>
-    	<nav id="header-nav" class="navbar">
-    		<div class="container">
-    			<div class="navbar-brand">
-    				<a href="index.html" class="">
-    				<div id="logo-img" alt="Logo Image">
-    				</div>
-    				</a>    				
-    			</div>
-    		</div>
+    	<nav id="header-nav" class="navbar navbar-expand-md navbar-light">
+        	    <div class="container-fluid justify-content-start">
+        	        <div class="navbar-brand">
+                        <a href="index.html" class="float-left d-none d-md-block d-lg-block d-xl-block">
+        				    <div id="logo-img" alt="Logo Image"></div>
+                        </a>
+
+        		    </div>
+                    <div class = "navbar-brand">
+                        <a href="index.html" class ="restaurant_Name"><h1>David Chu's China Bistro</h1></a><img src="images/star-k-logo.png" alt="Kosher Certification" style ="margin-right: 5px;"><span class="navbar-text kosher">Kosher Certified</span>
+                    </div>
+        	    </div>
+    		  
+                <button class="navbar-toggler float-right" type="button" data-toggle= "collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+              <div id="navMenu" class="collapse navbar-collapse">
+    			 <ul class="navbar-nav mr-auto navList">
+    				    <li><div>Menu</div></li>
+    				    <li><div>About</div></li>
+    				    <li><div>Awards</div></li>
+    			 </ul>
+    		  </div> 
     	</nav>
     </header>
 
