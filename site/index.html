@@ -8,6 +8,7 @@
     
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 	
 	<!-- Font imports-->
@@ -20,15 +21,16 @@
   <body>
   	<!-- Website header -->
     <header>
-    	<nav id="header-nav" class="navbar navbar-expand-md navbar-light">
-        	    <div class="container-fluid justify-content-start">
-        	        <div class="navbar-brand">
-                        <a href="index.html" class="float-left d-none d-md-block d-lg-block d-xl-block">
-        				    <div id="logo-img" alt="Logo Image"></div>
-                        </a>
+    	<nav id="header-nav" class="navbar navbar-expand-md navbar-light mr-auto">
+        	<div id= "name-logo" class="container justify-content-start">
+        	   <div class="navbar-brand">
+                    <a href="index.html" class="float-left d-none d-md-block d-lg-block d-xl-block">
+                        <div id="logo-img" alt="Logo Image"></div>
+                    </a>
 
-        		    </div>
-                    <div class = "navbar-brand">
+        		</div>
+                
+                <div class = "navbar-brand">
                         <a href="index.html" class ="restaurant_Name"><h1>David Chu's China Bistro</h1></a><img src="images/star-k-logo.png" alt="Kosher Certification" style ="margin-right: 5px;"><span class="navbar-text kosher">Kosher Certified</span>
                     </div>
         	    </div>
@@ -37,13 +39,25 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-              <div id="navMenu" class="collapse navbar-collapse">
-    			 <ul class="navbar-nav mr-auto navList">
-    				    <li><div>Menu</div></li>
-    				    <li><div>About</div></li>
-    				    <li><div>Awards</div></li>
-    			 </ul>
-    		  </div> 
+            <div id="navMenu" class="collapse navbar-collapse">
+    			<ul class="navbar-nav navList">
+    				<li>
+                        <a href="menu-categories.html">
+                            <span><img src="open-iconic-master/svg/spreadsheet.svg" alt=""></span>
+                            Menu
+                        </a>
+                    </li>
+    				<li>
+                        <a href ="">About</a>
+                    </li>
+    				<li>
+                        <a href ="">Awards</a>
+                    </li>
+                    <li class="d-none d-md-block">
+                        <a href="tel:410-111-2233">410-111-2233</a>
+                    </li>
+    			</ul>
+    		</div> 
     	</nav>
     </header>
 
