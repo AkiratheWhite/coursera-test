@@ -147,17 +147,22 @@ div.restaurant_Name{
 		color: #b91515;
 	}
 
-	.jumbotron {
+	#jumbotron {
+		display: flex;
+  		align-items: center;
 		padding: 0;
 		margin: 0 auto 0 auto;
-		background-image: url("../images/jumbotron.jpg");
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
 		border-radius: 20px;
-		border: 2px solid #3F0C1F;
+		border: 3px solid #3F0C1F;
 		height: 50vw;
 		max-height: 675px;
 		max-width: 1200px;
+		overflow: hidden;
+	}
+
+	#jumbotron img{
+		height: auto;
+		width: 105%;
 	}
 
 	.main-content-img {
@@ -165,11 +170,11 @@ div.restaurant_Name{
 		width: 24px;
 	}
 
-	#main-content {
+	.main-content {
 		padding: 2% 5% 20px 5%;
 	}
 
-	#main-content div {
+	.main-content div {
 		margin: 5px auto 5px auto;
 	}
 
@@ -228,7 +233,7 @@ div.restaurant_Name{
 	}
 
 	@media (min-width: 993px){
-		.jumbotron {
+		#jumbotron {
 
 		}
 	}
