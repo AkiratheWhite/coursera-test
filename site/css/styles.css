@@ -10,11 +10,28 @@ body {
 	background-color: #f6b319;
 	border-radius: 0;
 	border: 0;
+	align-items: flex-start;
 }
 
-#name-logo{
-	align-items: left!important;
-}
+/*Formatting for logo and restaurant name.*/
+	#name-logo{
+		align-items: left!important;
+		justify-content: flex-start;
+	}
+
+	.navbar-brand span.kosher{
+		color: #000;
+		text-transform: uppercase;
+		font-size: .7em;
+		margin-top: 15px;
+	}
+
+	#logo-img{
+		background: url(../images/restaurant-logo_large.png) no-repeat;
+		width: 150px;
+		height: 150px;
+		margin: 10px 0px 10px 0px;
+	}
 
 .navbar-brand {
 	padding-top: 10px;
@@ -36,67 +53,182 @@ div.restaurant_Name{
 	text-transform: uppercase;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #222;
-	margin-top: 0;
-	margin-bottom: 0;
+	padding: 0;
+	margin: 0;
 	line-height: 0.75;
 }
 
-.container {
-	width:50%;
+.container-fluid {
 	margin-left: 0;
-	margin-right: auto;
+	margin-right: 0;
 }
 
-/*CSS style to ensure that containers wrap properly on smaller devices.*/
-@media (max-width: 767.98px) {
-	.navbar-brand h1{
-		white-space: normal; /*Used to ensure that text wraps properly. Set to no-wrap in default Bootstrap 4.*/
+/*Formatting for the menu toggler*/
+	.menuButton {
+		margin: auto 0 auto auto;
+		/*border: 1px solid black;*/
+	}
+
+	/*Changing the toggler color.*/
+	.navbar-toggler-icon {
+	  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(97, 18, 47, 1.0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	}
+
+	/*Changing the toggler border color.*/
+	.navbar-toggler {
+	  border: 2px solid;
+	  border-color: rgb(97, 18, 47);
+	} 
+
+/*CSS styling for the navigation menu's icons and spacing.*/
+	.navMenu {
+		padding: 0;
+		margin: auto;
+	}
+
+	.navList{	
+		margin: 0px 0px 0px auto;
+	}
+
+	.navList a {
+		color: #61122f;
+		text-decoration: none
+	}
+
+	/*Defines the size of icons used in on the homepage.*/
+	.navList img{
+		height: 28px;
+		width: 28px;
+		color: #61122f;
+	}
+
+	/*Defines the margins for the navigation menu buttons.*/
+	.navList li{
+		margin: 0px 15px 0px 0px;
+	}
+
+	.navList li img{
+		margin: 0px 10px 0px 0px;
+	}
+
+
+/*CSS styling for the phone number*/
+	.phoneNumber {
 		line-height: 1.0;
+		text-align: right;
 	}
 
-	/*Disables fluid width for small resolutions. This allows the item menu to be seen.*/
-	.container { 
-		max-width: 80%;
+	/*Formatting for the phone number font*/
+	.phoneNumber a{
+		font-size: 1.5em;
+		font-weight: bold;
 	}
-}
 
-#navMenu {
-	flex-direction: row-reverse;
-}
+	/*Formatting for the "We Deliver" font*/
+	.phoneNumber span {
+		color: #557c3e;
+		font-size: 0.75em;
+		text-align: right;
+		font-weight: bold;
+	}
 
-.navList {
-	text-decoration: none;
-}
-
-.navList a{
-	margin: 5px;
-}
-
-@media (max-width: 940px){
-	.navList{
-		flex-direction: column !important;
+/*CSS for main page contents.*/
+	.telephone-number {
+		background-color: #f6b319;
 		text-align: center;
+		font-size: 1.75em;
+		border: 3px solid #3F0C1F;
+		border-radius: 20px;
+		padding: 5px;
 	}
-}
 
-@media (min-width: 861px){
-	.navList a{
-		margin: 5px;
+	.telephone-number a {
+		text-decoration: none;
+		color: #b91515;
 	}
-}
 
+	.jumbotron {
+		padding: 0;
+		margin: 0 auto 0 auto;
+		background-image: url("../images/jumbotron.jpg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		border-radius: 20px;
+		border: 2px solid #3F0C1F;
+		height: 50vw;
+		max-height: 675px;
+		max-width: 1200px;
+	}
 
-.navbar-brand span.kosher{
-	color: #000;
-	text-transform: uppercase;
-	font-size: .7em;
-	margin-top: 15px;
-}
+	.main-content-img {
+		height: 24px;
+		width: 24px;
+	}
 
-#logo-img{
-	background: url(../images/restaurant-logo_large.png) no-repeat;
-	width: 150px;
-	height: 150px;
-	margin: 10px 15px 10px 0;
-}
+	#main-content {
+		padding: 2% 5% 20px 5%;
+	}
 
+	#main-content div {
+		margin: 5px auto 5px auto;
+	}
+
+	#deliver-text {
+		font-size: 0.75em;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0px;
+	}
+
+/*Responsive design stuff.*/
+	/*Used to ensure that restaraunt name wraps properly at smaller resolutions. Set to no-wrap in default Bootstrap 4.*/
+	@media (max-width: 767.98px) {
+		.navbar-brand h1{
+			white-space: normal; 
+			line-height: 1.0;
+			font-size: 1.25em;
+		}
+
+		.navbar-brand span.kosher{
+			font-size: 0.55em;
+		}
+
+		#header-nav{
+			padding-top: 30px;
+		}
+
+		.navList li {
+			
+		}
+
+	}
+
+	@media (max-width: 992px){
+		/*Forces the homescreen menu to switch to a column alignment.*/
+		.navList{
+			flex-direction: column !important;
+			text-align: center;
+		}
+
+		.navList li {
+			margin: 5px 0px 5px 0px;
+		}
+
+		/*Prevents the container-fluid of #name-logo from taking up the entire width of the navbar. The menu icon won't get bumped down now.*/
+		#name-logo { 
+			width: 80%;
+		}
+
+		/*Reduces the size of icons in the navigation menu on smaller resolutions in column formation.*/
+		.navList img{
+			height: 16px;
+			width: 16px;
+			color: #61122f;
+		}
+	}
+
+	@media (min-width: 993px){
+		.jumbotron {
+
+		}
+	}
