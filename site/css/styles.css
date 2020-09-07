@@ -147,31 +147,15 @@ div.restaurant_Name{
 		color: #b91515;
 	}
 
-	#jumbotron {
-		display: flex;
-  		align-items: center;
-		padding: 0;
-		margin: 0 auto 0 auto;
-		border-radius: 20px;
-		border: 3px solid #3F0C1F;
-		height: 50vw;
-		max-height: 675px;
-		max-width: 1200px;
-		overflow: hidden;
-	}
-
-	#jumbotron img{
-		height: auto;
-		width: 105%;
-	}
-
 	.main-content-img {
 		height: 24px;
 		width: 24px;
 	}
 
 	.main-content {
-		padding: 2% 5% 20px 5%;
+		padding-top: min(5vw, 20px);
+		padding-left: 5vw;
+		padding-right: 5vw;
 	}
 
 	.main-content div {
@@ -182,7 +166,23 @@ div.restaurant_Name{
 		font-size: 0.75em;
 		text-align: center;
 		text-transform: uppercase;
-		margin: 0px;
+	}
+
+	#jumbotron-container {
+		border: 3px solid #3F0C1F;
+		border-radius: 10px;
+		background-color: #f6b319;
+		padding: 2px;
+		height: calc((90vw) * 0.5625);
+		overflow: hidden;
+		max-height: 675px;
+		max-width: 1200px;
+	}
+
+	#jumbotron-container img{
+		border-radius: 10px;
+		height: 100%;
+		width: 100%;
 	}
 
 /*Responsive design stuff.*/
@@ -229,11 +229,5 @@ div.restaurant_Name{
 			height: 16px;
 			width: 16px;
 			color: #61122f;
-		}
-	}
-
-	@media (min-width: 993px){
-		#jumbotron {
-
 		}
 	}
