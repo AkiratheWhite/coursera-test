@@ -1,19 +1,20 @@
-body {
-	font-size: 16px;
-	color: #fff;
-	background-color: #61122f;
-	font-family: 'Oxygen', sans-serif;
-}
+/*HOMEPAGE FORMATTING*/
+	body {
+		font-size: 16px;
+		color: #fff;
+		background-color: #61122f;
+		font-family: 'Oxygen', sans-serif;
+	}
 
-/* Header properties */
-#header-nav{
-	background-color: #f6b319;
-	border-radius: 0;
-	border: 0;
-	align-items: flex-start;
-}
+/*HEADER START*/
+	#header-nav{
+		background-color: #f6b319;
+		border-radius: 0;
+		border: 0;
+		align-items: flex-start;
+	}
 
-/*Formatting for logo and restaurant name.*/
+	/*Formatting for logo and restaurant name.*/
 	#name-logo{
 		align-items: left!important;
 		justify-content: flex-start;
@@ -33,37 +34,37 @@ body {
 		margin: 10px 0px 10px 0px;
 	}
 
-.navbar-brand {
-	padding-top: 10px;
-}
+	.navbar-brand {
+		padding-top: 10px;
+	}
 
-/* Special workaround for restaurant title; need to overwrite Bootstrap CSS's styling for anchors */
-a.restaurant_Name {
-    color: #557c3e;
-    text-decoration: none; /*Disables unlines.*/
-}
+	/* Special workaround for restaurant title; need to overwrite Bootstrap CSS's styling for anchors */
+	a.restaurant_Name {
+	    color: #557c3e;
+	    text-decoration: none; /*Disables unlines.*/
+	}
 
-div.restaurant_Name{
-	margin-top: 10px;
-}
+	div.restaurant_Name{
+		margin-top: 10px;
+	}
 
-.navbar-brand h1{
-	font-family: 'Lora', serif;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-shadow: 1px 1px 1px #222;
-	padding: 0;
-	margin: 0;
-	line-height: 0.75;
-}
+	.navbar-brand h1{
+		font-family: 'Lora', serif;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-shadow: 1px 1px 1px #222;
+		padding: 0;
+		margin: 0;
+		line-height: 0.75;
+	}
 
-.container-fluid {
-	margin-left: 0;
-	margin-right: 0;
-}
+	.container-fluid {
+		margin-left: 0;
+		margin-right: 0;
+	}
 
-/*Formatting for the menu toggler*/
+	/*Formatting for the menu toggler*/
 	.menuButton {
 		margin: auto 0 auto auto;
 		/*border: 1px solid black;*/
@@ -80,7 +81,7 @@ div.restaurant_Name{
 	  border-color: rgb(97, 18, 47);
 	} 
 
-/*CSS styling for the navigation menu's icons and spacing.*/
+	/*CSS styling for the navigation menu's icons and spacing.*/
 	.navMenu {
 		padding: 0;
 		margin: auto;
@@ -112,7 +113,7 @@ div.restaurant_Name{
 	}
 
 
-/*CSS styling for the phone number*/
+	/*CSS styling for the phone number*/
 	.phoneNumber {
 		line-height: 1.0;
 		text-align: right;
@@ -131,9 +132,24 @@ div.restaurant_Name{
 		text-align: right;
 		font-weight: bold;
 	}
+/* END OF HEADER*/
 
-/*CSS for main page contents.*/
-	.telephone-number {
+/*CONTENTS START*/
+	/*CSS for main page contents.*/
+
+	.main-content {
+		padding-top: min(5vw, 15px);
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+
+	.main-content div {
+		margin: 15px auto 15px auto;
+	}
+
+	.main-content #telephone-number {
+		margin-top: 0px;
+		margin-bottom: 0px;
 		background-color: #f6b319;
 		text-align: center;
 		font-size: 1.75em;
@@ -142,7 +158,7 @@ div.restaurant_Name{
 		padding: 5px;
 	}
 
-	.telephone-number a {
+	#telephone-number a {
 		text-decoration: none;
 		color: #b91515;
 	}
@@ -152,22 +168,14 @@ div.restaurant_Name{
 		width: 24px;
 	}
 
-	.main-content {
-		padding-top: min(5vw, 20px);
-		padding-left: 5vw;
-		padding-right: 5vw;
-	}
-
-	.main-content div {
-		margin: 5px auto 5px auto;
-	}
 
 	#deliver-text {
+		margin-top: 0px;
 		font-size: 0.75em;
 		text-align: center;
 		text-transform: uppercase;
 	}
-
+	/*Styling for the jumbotron display.*/
 	#jumbotron-container {
 		border: 3px solid #3F0C1F;
 		border-radius: 10px;
@@ -185,7 +193,81 @@ div.restaurant_Name{
 		width: 100%;
 	}
 
-/*Responsive design stuff.*/
+	/*Styling for the menu tiles.*/
+	#home-tiles {
+		max-width: 1200px;
+	}
+
+	/*Styling for the menu tile anchor container.*/
+	#home-tiles a {
+		display: block;
+		/*Specifying relative position because I will use absolute positioning for the span.*/
+		position: relative;
+
+		border-radius: 10px;
+		border: 3px solid #3F0C1F;
+
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		overflow: hidden;
+
+		text-decoration: none;
+		color: white;
+
+		height: 20vw;
+		max-width: 360px;
+
+		min-height: 116.5px;
+		max-height: 250px;
+	}
+
+	/*Adds a box shadow when hovering over the tiles for user clarity.*/
+	#home-tiles a:hover {
+		box-shadow: 0 1px 5px 1px #CCCCCC;
+	}
+
+	/*CSS styling for the text/overlay on each of the menu buttons.*/
+	#home-tiles a span {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		padding: 5px;
+
+		width: 100%;
+
+		background-color: rgba(0,0,0,0.8);
+
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	#menu-tile a {
+		background-image: url("../images/menu-tile.jpg");
+	}
+
+	#specials-tile a {
+		background-image: url("../images/specials-tile.jpg");
+	}
+
+	#map-tile a{
+	}
+
+/*RESPONSIVE DESIGN*/
+	/**SMALL DEVICES AND BELOW**/
+	@media (max-width: 575px) {
+		#map-tile {
+			padding: 0;
+		}
+		
+		#map-tile a {
+			margin: 0;
+			height: 500px;
+			width: 100%;
+		}
+	}
+
 	/*Used to ensure that restaraunt name wraps properly at smaller resolutions. Set to no-wrap in default Bootstrap 4.*/
 	@media (max-width: 767.98px) {
 		.navbar-brand h1{
@@ -208,6 +290,14 @@ div.restaurant_Name{
 
 	}
 
+	/**MEDIUM SIZED DEVICES AND ABOVE**/
+	@media (min-width: 577px) {
+		#home-tiles a span {
+			font-size: 1.25em;
+		}
+	}
+
+	/**MEDIUM SIZED DEVICES AND BELOW**/
 	@media (max-width: 992px){
 		/*Forces the homescreen menu to switch to a column alignment.*/
 		.navList{

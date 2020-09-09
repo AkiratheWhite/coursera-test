@@ -67,18 +67,45 @@
 
     <div class="container-fluid main-content">
 
-        <div class="telephone-number container d-sm-block d-md-none">
+        <!-- Phone number for smaller displays.-->
+        <div id ="telephone-number" class="container d-sm-block d-md-none">
             <a href="tel:410-111-2233">
                <span><img class="main-content-img"src="open-iconic-master/svg/phone.svg">410-111-2233</span>
             </a>
         </div>
-        
+
         <div id="deliver-text" class="container d-sm-block d-md-none">*We deliver</div>
         
-        <div id = "jumbotron-container" class = "container-fluid">
-            <img src="images/jumbotron.jpg">
+        <!-- Jumbotron display.-->
+        <div id = "jumbotron-container" class = "col-12">
+            <img src="images/jumbotron.jpg" alt ="Restaurant Image">
         </div>
 
+        <!-- Menu grids displays.-->
+ 
+
+            <div id="home-tiles" class="row justify-content-around">
+                <div id="menu-tile" class="col-6 col-sm-4">
+                    <a href="menu-categories.html">
+                        <span>Menu</span>
+                    </a>
+                </div>
+            
+                <div id="specials-tile" class="col-6 col-sm-4">
+                    <a href="single-category.html">
+                        <span>Specials</span>
+                    </a>
+                </div>
+
+                <div id="map-tile" class = "col-12 col-sm-4">
+                    <a href="https://goo.gl/maps/DJ3puM72Xd5mwh6AA" target="_blank">
+                        <span class= "d-none d-sm-block">Map</span> 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10019.96196631691!2d-114.0400024!3d51.1086356!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2fd50c08dd7182a!2sBuffet%20Yangtze!5e0!3m2!1sen!2sca!4v1599591041277!5m2!1sen!2sca" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </a>
+                </div>
+
+            </div>
+            
             
     </div>
 
