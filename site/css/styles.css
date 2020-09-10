@@ -250,9 +250,70 @@
 	#specials-tile a {
 		background-image: url("../images/specials-tile.jpg");
 	}
+/**END OF CONTENTS**/
 
-	#map-tile a{
+/**FOOTER START**/
+	.card-footer {
+		background-color: #222;
 	}
+
+	#homepage-footer {
+		padding-top: 0;
+		padding-bottom: 5vh;
+	}
+
+	#homepage-footer > div {
+		margin: 15px auto 15px auto;
+	}
+
+	#homepage-footer div span{
+		font-size: 1.25em;
+		font-weight: bold;
+	}
+
+	#homepage-footer div.row {
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#homepage-footer .row div{
+		margin: 0px auto 0px auto;
+	}
+	
+	#homepage-footer hr{
+		border: 1px solid white;
+		width: 90%;
+		margin: 15px auto 15px auto;
+	}
+
+	#hours {
+		line-height: 1.5;
+	}
+
+	#testimonial p {
+		font-style: italic;
+		margin: 0;
+	}
+
+	#testimonial p:nth-child(1){
+		margin-bottom: 25px;
+	}
+
+	#address {
+		line-height: 1.5;
+	}
+
+	#address p{
+		font-size: 0.8em;
+		color: #557C3E;
+		line-height: 1.25;
+	}
+
+	#copyright {
+		padding-top: 30px;
+	}
+/**END OF FOOTER**/
 
 /*RESPONSIVE DESIGN*/
 	/**SMALL DEVICES AND BELOW**/
@@ -266,6 +327,11 @@
 			height: 500px;
 			width: 100%;
 		}
+
+		#homepage-footer .row div{
+			text-align: center;
+		}
+
 	}
 
 	/*Used to ensure that restaraunt name wraps properly at smaller resolutions. Set to no-wrap in default Bootstrap 4.*/
