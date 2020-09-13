@@ -5,6 +5,11 @@
 		font-family: 'Oxygen', sans-serif;
 	}
 
+	.active {
+		background-color: white;
+		border-radius: 10px;
+	}
+
 /*HEADER START*/
 	#header-nav{
 		background-color: #f6b319;
@@ -99,7 +104,7 @@
 
 	/*Defines the margins for the navigation menu buttons.*/
 	.navList li{
-		margin: 0px 15px 0px 0px;
+		padding: 10px;
 	}
 
 	.navList li img{
@@ -241,6 +246,8 @@
 		background-image: url("../images/specials-tile.jpg");
 	}
 /**END OF HOMEPAGE**/
+
+/**MENU CATEGORY PAGE**/
 	/*CSS styling for the menu category page.*/
 	.main-content h2 {
 		margin: 30px auto 0 auto;
@@ -295,6 +302,54 @@
 	.category-tile:hover {
 		box-shadow: 0 1px 5px 1px #CCCCCC;
 	}
+/**END OF MENU CATEGORIES**/
+
+/**START OF SINGLE CATEGORY**/
+	.menu-item-tile {
+		margin-bottom: 30px;
+	}
+	.menu-items-row hr {
+		border: 1px solid white;
+		width: 80%;
+		margin: -10px 0 30px;
+	}
+
+	.menu-item-price {
+		text-align: right;
+	}
+
+	.menu-item-tile .menu-item-price span{
+		font-size: 0.6em;
+	}
+
+	.menu-item-tile .menu-item-photo {
+		border: 2px solid #3F0C1F;
+		overflow: hidden;
+		position: relative;
+		max-width: 250px;
+	}
+
+	.menu-item-tile .menu-item-photo div{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		background-color: #557C3E;
+		text-align: center;
+		width: 100%;
+		max-width: 80px;
+	}
+
+	.menu-item-description h3{
+		font-size: 1.0em;
+		margin: 0 0 10px;
+	}
+
+	.menu-item-description p{
+		font-size: 0.9em;
+		font-style: italic;
+	}
+/**END OF SINGLE CATEGORY**/
+
 /**END OF CONTENTS**/
 
 /**FOOTER START**/
@@ -373,10 +428,18 @@
 			max-width: 100%; /*This allows the map tile to expand on small resolutions*/
 		}
 
-		.card-footer .row div{
+		.menu-item-price {
 			text-align: center;
+			margin: 15px 0px;
 		}
 
+		.menu-item-photo {
+			margin: 0 auto;
+		}
+
+		.menu-item-description {
+			text-align: center;
+		}
 	}
 
 	/*Used to ensure that restaraunt name wraps properly at smaller resolutions. Set to no-wrap in default Bootstrap 4.*/
@@ -394,6 +457,8 @@
 		#header-nav{
 			padding-top: 30px;
 		}
+
+
 	}
 
 	/**MEDIUM SIZED DEVICES AND ABOVE**/
@@ -417,6 +482,7 @@
 
 		.navList li {
 			margin: 5px 0px 5px 0px;
+			padding: 0;
 		}
 
 		/*Prevents the container-fluid of #name-logo from taking up the entire width of the navbar. The menu icon won't get bumped down now.*/
@@ -430,4 +496,9 @@
 			width: 16px;
 			color: #61122f;
 		}
+
+		.card-footer .row div{
+			text-align: center;
+		}
+
 	}
